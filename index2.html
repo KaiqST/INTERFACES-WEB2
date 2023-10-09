@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu do Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #menu {
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            list-style: none;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #ff6600;
+        }
+
+        .bifemilanesa {
+            border-radius: 20px;
+            border: 10px solid #333;
+        }
+        .strogonof{  
+             border-radius: 20px;
+            border: 10px solid #333;
+
+        }
+        .feijoada{
+            border-radius: 20px;
+            border: 10px solid #333;
+        }
+        .lasanha{
+            border-radius: 20px;
+            border: 10px solid #333;
+        }
+        .costela{ 
+            border-radius: 20px;
+            border: 10px solid #333;
+        }
+        .Salada{
+            border-radius: 20px;
+            border: 10px solid #333;
+         }
+        
+        div img{
+            width: 100%;
+            max-width: 500px;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        button{margin-top: 15px;
+             margin-left: 80px; 
+             margin-right: 70px;
+           height: 50px;
+           width: 100px;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           font-size:larger;
+           background-color: #ff6600;
+           border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Restaurante do Kaique</h1>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li>
+                    <div>
+                        <h3>Milanesa:</h3>
+
+                       
+
+                        <p>Descrição: </p>
+                        <p>Um prato famoso da culinária brasileira, de carne empanada, com seus devidos acompanhamentos.
+                            Carne de qualidade, e feita com muito amor. </p>
+                        <p class="price">R$ 45,00</p>
+                        <img src="bife-a-milanesa.jpg" alt="bife a milanesa" class="bifemilanesa" width="500px" height="300px">
+                    <button class="order-button">Comprar</button> 
+                </div>
+                </li>
+                <li>
+                    <div>
+                    <h3>Strogonof</h3>
+                    <p>Descrição:</p>
+                    <p>Um prato famoso da culinária russa, feito especialmente para transformar o seu paladar, um
+                        dos melhores pratos já inventados. </p>
+                    <p class="price">R$ 40,00</p>
+                    <img src="strogo.webp" alt="strogonof"  class="strogonof" width="500px" height="300px">
+                    <button class="order-button">Comprar</button>     
+                </div>
+                </li>
+                <li>
+                    <div>
+                    <h3>Feijoada</h3>
+                    <p>Descrição:</p>
+                    <p>Um prato famoso da culinária brasileira, feito com muito amor e carinho por nossos chefes, venha e compre essa maravilha. </p>
+                    <p class="price">R$ 30,00</p>
+                    <img src="feijoada.jpg" alt="feijoada"  class="feijoada" width="500px" height="300px">
+                    <button class="order-button">Comprar</button>     
+                </div>
+                    
+                </li>
+                <li>
+                    <div>
+                    <h3>Lasanha</h3>
+                    <p>Descrição: </p>
+                    <p>A lasanha é um prato delicioso, e um dos mais pedidos do nosso restaurantes. </p>
+                    <p class="price">R$ 45,00</p>
+                    <img src="lasanha.jpg" alt="lasanha" class="lasanha" width="500px" height="300px">
+                    <button class="order-button">Comprar</button>    
+                </div>
+                </li>
+                <li> 
+                    <div>
+                    <h3>Costela</h3>
+                    <p>Descrição: </p>
+                    <p>Melhor carne da região, a mais deliciosa, e a 2ª comida mais pedida do nosso retaurante. </p>
+                    <p class="price">R$ 58,00</p>
+                    <img src="costelA.png" alt="costela" class="costela" width="500px" height="300px">
+                    <button class="order-button">Comprar</button> 
+                </div> 
+            </li>
+                <li>
+                    <div>
+                    <h3>Salada Grega </h3>
+                    <p>Descrição:</p>
+                    <p>Um prato famoso da culinária grega, vêm em uma pequena porção deliciosa para te satisfazer da melhor forma.  </p>
+                    <p class="price">R$ 16,00</p>
+                    <img src="salada-grega.webp" alt="Salada" class="Salada" width="500px" height="300px">
+                    <button class="order-button">Comprar</button> 
+                </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+<script src="scriptmenu.js"></script>
+</html>

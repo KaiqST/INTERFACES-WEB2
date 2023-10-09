@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de Compra</title>
+    <style>
+ * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.product {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.product img {
+    width: 100%;
+    max-width: 200px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+input[type="number"] {
+    width: 40px;
+    text-align: center;
+}
+
+.price {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+        .bifemilanesa {
+            border-radius: 20px;
+            border: 10px solid #333;
+        }
+        .strogonof{  
+             border-radius: 20px;
+            border: 10px solid #333;
+
+        }
+        .feijoada{
+            border-radius: 20px;
+            border: 10px solid #333;
+        }
+        .lasanha{
+            border-radius: 20px;
+            border: 10px solid #333;
+        }
+        .costela{ 
+            border-radius: 20px;
+            border: 10px solid #333;
+        }
+        .salada{
+            border-radius: 20px;
+            border: 10px solid #333;
+         }
+
+#total {
+    margin-top: 20px;
+}
+button{margin-top: 15px;
+             margin-left: 80px; 
+             margin-right: 70px;
+           height: 50px;
+           width: 100px;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           font-size:larger;
+           background-color: #ff6600;
+           border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Restaurante do Kaique: Tabela Para Compra</h1>
+    <div class="product">
+        <img src="strogo.webp" alt="strogonof" class="strogonof">
+        <h2>Strogonof</h2>
+        <p>Descrição:</p>
+        <p>Um prato famoso da culinária russa, feito especialmente para transformar o seu paladar, um
+            dos melhores pratos já inventados.  </p>
+        <p class="price">R$ 40,00</p>
+        <label for="product1-quantity">Quantidade:</label>
+        <input type="number" id="product1-quantity" value="0" min="0">
+    </div>
+    <div class="product">
+        <img src="bife-a-milanesa.jpg" alt="bifemilanesa" class="bifemilanesa">
+        <h2>Bife a milanesa </h2>
+        <p>Descrição: </p>
+        <p>Um prato famoso da culinária brasileira, de carne empanada, com seus devidos acompanhamentos.
+            Carne de qualidade, e feita com muito amor.</p>
+        <p class="price">R$ 45,00</p>
+        <label for="product2-quantity">Quantidade:</label>
+        <input type="number" id="product2-quantity" value="0" min="0">
+    </div>
+    <div class="product">
+        <img src="feijoada.jpg" alt="feijoada" class="feijoada">
+        <h2>Feijoada</h2>
+        <p>Descrição:</p>
+        <p>m prato famoso da culinária brasileira, feito com muito amor e carinho por nossos chefes, venha e compre essa maravilha.</p>
+        <p class="price">R$ 30,00</p>
+        <label for="product3-quantity">Quantidade:</label>
+        <input type="number" id="product3-quantity" value="0" min="0">
+    </div>
+
+    <div class="product">
+        <img src="lasanha.jpg" alt="lasanha" class="lasanha">
+        <h2>Lasanha</h2>
+        <p>Descrição:</p>
+        <p>A lasanha é um prato delicioso, e um dos mais pedidos do nosso restaurantes.</p>
+        <p class="price">R$ 45,00</p>
+        <label for="product3-quantity">Quantidade:</label>
+        <input type="number" id="product3-quantity" value="0" min="0">
+    </div>
+
+    <div class="product">
+        <img src="costelA.png" alt="costela" class="costela">
+        <h2>Costela</h2>
+        <p>Descrição:</p>
+        <p>Melhor carne da região, a mais deliciosa, e a 2ª comida mais pedida do nosso retaurante. </p>
+        <p class="price">R$ 58,00</p>
+        <label for="product3-quantity">Quantidade:</label>
+        <input type="number" id="product3-quantity" value="0" min="0">
+    </div>
+
+    <div class="product">
+        <img src="salada-grega.webp" alt="salada" class="salada" >
+        <h2>Salada Grega </h2>
+        <p>Descrição:</p>
+        <p>Um prato famoso da culinária grega, vêm em uma pequena porção deliciosa para te satisfazer da melhor forma.  </p>
+        <p class="price">R$ 16,00</p>
+        <label for="product3-quantity">Quantidade:</label>
+        <input type="number" id="product3-quantity" value="0" min="0">
+    </div>
+    <div id="total">
+        <h2>Total da Compra:</h2>
+        <p class="price">R$ 0,00</p>
+    </div>
+
+    <div>
+        <button class="button2">Comprar!</button> 
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
